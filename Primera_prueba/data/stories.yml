@@ -1,0 +1,69 @@
+version: "3.1"
+
+stories:
+- story: historia de saludo
+  steps:
+    - intent: saludar
+    - action: utter_saludar
+
+- story: historia de despedida
+  steps:
+    - intent: despedirse
+    - action: utter_despedirse
+
+- story: historia sobre la historia de la organización
+  steps:
+    - intent: saber_historia_organizacion
+    - action: utter_saber_historia_organizacion
+
+- story: historia sobre la misión de la organización
+  steps:
+    - intent: saber_mision_organizacion
+    - action: utter_saber_mision_organizacion
+
+- story: historia sobre la visión de la organización
+  steps:
+    - intent: saber_vision_organizacion
+    - action: utter_saber_vision_organizacion
+
+- story: saludo seguido de saber la historia de la organización
+  steps:
+    - intent: saludar
+    - action: utter_saludar
+    - intent: saber_historia_organizacion
+    - action: utter_saber_historia_organizacion
+
+- story: saber misión seguido de despedida
+  steps:
+    - intent: saber_mision_organizacion
+    - action: utter_saber_mision_organizacion
+    - intent: despedirse
+    - action: utter_despedirse
+
+- story: saludo seguido de saber misión y visión
+  steps:
+    - intent: saludar
+    - action: utter_saludar
+    - intent: saber_mision_organizacion
+    - action: utter_saber_mision_organizacion
+    - intent: saber_vision_organizacion
+    - action: utter_saber_vision_organizacion
+
+- story: saber historia seguido de saber misión
+  steps:
+    - intent: saber_historia_organizacion
+    - action: utter_saber_historia_organizacion
+    - intent: saber_mision_organizacion
+    - action: utter_saber_mision_organizacion
+
+- story: solicitud de participacion positiva
+  steps:
+    - intent: participar_actividad
+    - action: utter_participar_actividad
+    - intent: respuesta_afirmativa
+    - action: utter_ask_nombre
+    - action: datos_usuario
+    - active_loop: datos_usuario
+    - intent: proporcionar_nombre
+    - action: utter_submit
+

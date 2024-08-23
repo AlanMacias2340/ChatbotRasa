@@ -1,0 +1,465 @@
+version: "3.1"
+
+nlu:
+- intent: saludar
+  examples: |
+    - hola
+    - hi
+- intent: despedirse
+  examples: |
+    - adiós
+    - hasta luego
+    - nos vemos
+    - chau
+    - hasta la próxima
+    - cuídate
+    - me despido
+    - hasta pronto
+    - que tengas un buen día
+    - que te vaya bien
+    - hasta la vista
+    - nos vemos luego
+    - nos vemos pronto
+    - hasta otra
+    - que estés bien
+    - me voy
+    - hablamos luego
+    - adiós, que tengas un buen día
+    - adiós, cuídate
+    - me retiro
+    - que tengas una buena tarde
+    - hasta más ver
+    - hasta mañana
+    - nos vemos mañana
+    - me despido, hasta luego
+    - que tengas una buena noche
+    - chau chau
+    - hasta luego, que estés bien
+    - adiós, nos vemos pronto
+    - cuídate mucho
+    - hasta la próxima vez
+    - adiós por ahora
+    - nos hablamos después
+    - que tengas un excelente día
+    - cuídate, hasta luego
+    - hasta más ver
+    - adiós y buena suerte
+    - que tengas un gran día
+    - hasta luego, amigo
+    - chau, nos vemos
+    - me voy, hasta luego
+    - adiós, hasta otra
+    - hablamos más tarde
+    - me despido por ahora
+    - adiós, hasta pronto
+    - que te vaya excelente
+    - hasta entonces
+    - nos vemos en otra ocasión
+    - que tengas un buen fin de semana
+    - nos vemos después
+    - hasta otra oportunidad
+    - que pases un buen día
+    - cuídate, hasta pronto
+    - adiós, nos vemos después
+    - me despido, cuídate
+    - hasta luego, nos vemos
+    - adiós, hablamos luego
+    - que tengas un bonito día
+    - hasta la próxima, adiós
+    - adiós, que te vaya bien
+    - nos vemos, cuídate
+    - hasta luego, nos hablamos
+    - adiós, cuídate mucho
+    - que pases una buena tarde
+    - nos vemos la próxima vez
+    - chau, hasta la vista
+    - adiós, que todo salga bien
+    - me voy, nos vemos
+    - hasta otra ocasión
+    - cuídate, nos hablamos pronto
+    - adiós, hasta la próxima
+    - que tengas un buen día, adiós
+    - hasta luego, te cuidas
+    - nos vemos, adiós
+    - que tengas un buen fin de día
+    - me retiro, hasta pronto
+    - hablamos en otro momento
+    - adiós, que tengas buena suerte
+    - hasta pronto, amigo
+    - nos vemos en otro momento
+    - que te vaya de lo mejor
+    - hasta más tarde
+    - adiós, hasta el siguiente encuentro
+    - me despido, que estés bien
+    - hasta luego, nos vemos pronto
+    - cuídate mucho, hasta luego
+    - que pases una excelente tarde
+    - adiós, nos vemos luego
+    - hasta la próxima, cuídate
+    - nos vemos, que tengas un buen día
+    - hasta otra, que estés bien
+    - adiós, hablamos pronto
+- intent: saber_historia_organizacion
+  examples: |
+    - ¿Cuál es la historia de la organización?
+    - Me gustaría saber más sobre la historia de su organización.
+    - ¿Pueden contarme sobre los orígenes de la organización?
+    - ¿Cómo comenzó esta organización?
+    - Cuéntame la historia de la organización.
+    - ¿Desde cuándo existe esta organización?
+    - ¿Cómo se fundó la organización?
+    - ¿Quiénes fueron los fundadores de la organización?
+    - ¿Cuál fue la motivación para crear esta organización?
+    - ¿Cómo surgió la idea de la organización?
+    - Me interesa conocer la historia de su organización.
+    - ¿Cómo empezó todo para la organización?
+    - ¿Pueden explicar los inicios de la organización?
+    - Quisiera saber cómo se creó la organización.
+    - ¿Qué pueden decirme sobre el origen de la organización?
+    - ¿Cómo nació la organización?
+    - ¿Cuál es el origen de esta organización?
+    - ¿Cómo fue el inicio de la organización?
+    - ¿Cuándo se fundó la organización?
+    - ¿Qué inspiró la creación de la organización?
+    - Me gustaría conocer los antecedentes de la organización.
+    - ¿Cómo se inició esta organización?
+    - ¿Cuál es la historia detrás de la organización?
+    - ¿Cómo fue que se fundó esta organización?
+    - ¿Qué historia tiene la organización?
+    - ¿Cuál es la trayectoria de la organización desde sus inicios?
+    - ¿Qué pueden contarme sobre la fundación de la organización?
+    - ¿Cómo empezó la historia de la organización?
+    - ¿Qué eventos llevaron a la creación de la organización?
+    - ¿Qué detalles pueden darme sobre los inicios de la organización?
+    - ¿Cuál es la trayectoria histórica de la organización?
+    - ¿Cómo se desarrolló la organización a lo largo del tiempo?
+    - ¿Podrían darme una breve historia de la organización?
+    - ¿Cuál es la evolución histórica de la organización?
+    - ¿Cómo ha crecido la organización desde su fundación?
+    - ¿Qué hitos importantes tiene la historia de la organización?
+    - ¿Cuál es la cronología de eventos importantes en la organización?
+    - Me gustaría conocer la historia completa de la organización.
+    - ¿Cuáles son los momentos clave en la historia de la organización?
+    - ¿Cómo ha cambiado la organización desde que fue fundada?
+    - ¿Qué pueden decirme sobre la evolución de la organización?
+    - ¿Cómo se ha transformado la organización a lo largo de los años?
+    - ¿Qué historia tiene esta organización en el sector?
+    - ¿Cómo ha sido el recorrido de la organización desde sus inicios?
+    - ¿Qué pueden contarme sobre la fundación y desarrollo de la organización?
+    - ¿Cómo inició su camino esta organización?
+    - ¿Qué hechos importantes marcan la historia de la organización?
+    - ¿Cómo fue la evolución inicial de la organización?
+    - ¿Qué pueden compartir sobre los primeros años de la organización?
+    - ¿Cómo se estableció la organización?
+    - ¿Qué eventos importantes sucedieron al inicio de la organización?
+    - ¿Cómo se construyó la organización desde el principio?
+    - ¿Qué inspiró a los fundadores de la organización?
+    - ¿Cómo surgió y se consolidó la organización?
+    - ¿Qué motivó la creación de la organización?
+    - ¿Cuál es la historia y evolución de la organización?
+    - ¿Qué historia tiene la organización en la industria?
+    - ¿Qué factores contribuyeron al crecimiento de la organización?
+    - ¿Cómo fue la expansión de la organización?
+    - ¿Qué logros históricos tiene la organización?
+    - Quiero saber mas sobre ustedes
+    - Quiero saber mas 
+    - Dame mas info
+    - Quiero mas informacion
+    - info
+- intent: saber_mision_organizacion
+  examples: |
+    - ¿Cuál es la misión de la organización?
+    - Me gustaría saber la misión de su organización.
+    - ¿Qué misión tiene la organización?
+    - ¿Pueden decirme cuál es la misión de la organización?
+    - Cuéntenme sobre la misión de la organización.
+    - ¿Qué objetivos persigue la organización?
+    - ¿Cuál es la declaración de misión de la organización?
+    - ¿Qué propósito tiene la organización?
+    - ¿Cuál es el objetivo principal de la organización?
+    - ¿Qué busca lograr la organización?
+    - ¿Cuál es la meta de la organización?
+    - ¿Cuál es la visión y misión de la organización?
+    - ¿Qué valores guía la misión de la organización?
+    - ¿Cuál es la misión y propósito de la organización?
+    - ¿Qué pretende alcanzar la organización?
+    - ¿Qué misión persigue la organización?
+    - ¿Cuál es la razón de ser de la organización?
+    - ¿Qué se propone la organización?
+    - ¿Cuál es la misión y objetivos de la organización?
+    - ¿Cuál es el enfoque principal de la organización?
+    - ¿Qué impulsa a la organización?
+    - ¿Qué objetivos estratégicos tiene la organización?
+    - ¿Qué meta se ha propuesto la organización?
+    - ¿Qué principios fundamentan la misión de la organización?
+    - ¿Cuál es la misión institucional de la organización?
+    - ¿Qué misión y visión tiene la organización?
+    - ¿Qué declaración de misión tiene la organización?
+    - ¿Cuál es el propósito organizacional de la organización?
+    - ¿Cuál es la misión corporativa de la organización?
+    - ¿Qué objetivos fundamentales tiene la organización?
+    - ¿Cuál es el propósito principal de la organización?
+    - ¿Qué misión guía a la organización?
+    - ¿Cuál es la misión que sigue la organización?
+    - ¿Qué busca la organización con su misión?
+    - ¿Cuál es el compromiso de la organización?
+    - ¿Cuál es el objetivo de la misión de la organización?
+    - ¿Qué declara la misión de la organización?
+    - ¿Cuál es la misión que persigue la organización?
+    - ¿Qué misión se ha planteado la organización?
+    - ¿Qué misión han definido para la organización?
+    - ¿Cuál es la misión central de la organización?
+    - ¿Qué define la misión de la organización?
+    - ¿Qué dirección marca la misión de la organización?
+    - ¿Cuál es la meta principal de la organización?
+    - ¿Qué busca alcanzar la organización con su misión?
+    - ¿Qué objetivos se establecen en la misión de la organización?
+    - ¿Qué visión apoya la misión de la organización?
+    - ¿Cuál es la dirección de la misión de la organización?
+    - ¿Qué propósito define la misión de la organización?
+    - ¿Cuál es el objetivo estratégico de la misión de la organización?
+    - ¿Qué valores sustentan la misión de la organización?
+    - ¿Qué principios rigen la misión de la organización?
+    - ¿Qué propósito impulsa a la organización?
+    - ¿Qué misión define a la organización?
+    - ¿Cuál es la misión a largo plazo de la organización?
+    - ¿Qué misión orienta las actividades de la organización?
+    - ¿Qué fin tiene la misión de la organización?
+    - ¿Qué objetivos claros tiene la misión de la organización?
+    - ¿Cuál es la declaración de principios de la misión de la organización?
+    - ¿Qué metas incluye la misión de la organización?
+    - cual es su mision
+    - y su mision
+    - mision
+    - dame su mision
+- intent: saber_vision_organizacion
+  examples: |
+    - ¿Cuál es la visión de la organización?
+    - Me gustaría saber la visión de su organización.
+    - ¿Qué visión tiene la organización?
+    - ¿Pueden decirme cuál es la visión de la organización?
+    - Cuéntenme sobre la visión de la organización.
+    - ¿Qué visión persigue la organización?
+    - ¿Cuál es la proyección futura de la organización?
+    - ¿Qué objetivo futuro tiene la organización?
+    - ¿Cuál es la meta a largo plazo de la organización?
+    - ¿Qué busca lograr la organización en el futuro?
+    - ¿Cuál es el futuro deseado por la organización?
+    - ¿Qué visión de futuro tiene la organización?
+    - ¿Qué aspiraciones tiene la organización?
+    - ¿Cuál es el sueño de la organización?
+    - ¿Qué visión han establecido para la organización?
+    - ¿Cómo se proyecta la organización a futuro?
+    - ¿Qué esperan alcanzar a largo plazo?
+    - ¿Cuál es la dirección futura de la organización?
+    - ¿Qué visión estratégica tiene la organización?
+    - ¿Qué futuro visualiza la organización?
+    - ¿Qué objetivo a largo plazo tiene la organización?
+    - ¿Cuál es la perspectiva futura de la organización?
+    - ¿Qué buscan lograr en el futuro?
+    - ¿Qué imagen futura tiene la organización?
+    - ¿Qué visión tienen para el desarrollo de la organización?
+    - ¿Cuál es la visión corporativa de la organización?
+    - ¿Qué visión tienen a largo plazo?
+    - ¿Cuál es la misión y visión de la organización?
+    - ¿Qué objetivos a largo plazo persigue la organización?
+    - ¿Cuál es la visión y propósito de la organización?
+    - ¿Qué se espera lograr en el futuro con la organización?
+    - ¿Cuál es la visión a futuro de la organización?
+    - ¿Qué meta futura tiene la organización?
+    - ¿Cuál es la visión que guía a la organización?
+    - ¿Qué horizonte tiene la organización?
+    - ¿Qué se proponen alcanzar en el futuro?
+    - ¿Cuál es la visión de largo plazo de la organización?
+    - ¿Qué objetivos a futuro tiene la organización?
+    - ¿Qué futuro prevé la organización?
+    - ¿Qué se espera para el futuro de la organización?
+    - ¿Cuál es la visión que tienen para la organización?
+    - ¿Qué aspiraciones futuras tiene la organización?
+    - ¿Cuál es la visión institucional de la organización?
+    - ¿Qué proyecciones tiene la organización?
+    - ¿Cómo se ve la organización en el futuro?
+    - ¿Cuál es la visión que persiguen?
+    - ¿Qué perspectivas de futuro tiene la organización?
+    - ¿Qué visión de crecimiento tiene la organización?
+    - ¿Cómo visualizan el futuro de la organización?
+    - ¿Cuál es la visión y valores de la organización?
+    - ¿Qué objetivos de futuro tiene la organización?
+    - ¿Qué visión tienen para el desarrollo futuro?
+    - ¿Qué misión y visión tiene la organización a largo plazo?
+    - ¿Cómo proyectan el futuro de la organización?
+    - ¿Qué metas de futuro tiene la organización?
+    - ¿Cuál es la visión a largo plazo de su organización?
+    - ¿Qué desean lograr en el futuro?
+    - ¿Cómo se proyecta la organización en el futuro?
+    - ¿Qué aspiraciones a futuro tiene la organización?
+    - ¿Cuál es la visión futura que tienen?
+    - ¿Qué dirección futura sigue la organización?
+    - cual es su vision
+    - vision de la organ
+    - vision
+    - dame su vision
+- intent: participar_actividad
+  examples: |
+    - Me gustaría participar en la próxima actividad.
+    - ¿Cómo puedo inscribirme para la actividad?
+    - Quiero unirme a la actividad.
+    - ¿Puedo participar en la actividad?
+    - ¿Qué debo hacer para participar en la actividad?
+    - Me interesa unirme a la actividad.
+    - ¿Cómo puedo formar parte de la actividad?
+    - Deseo participar en la actividad.
+    - ¿Qué pasos debo seguir para inscribirme en la actividad?
+    - ¿Hay cupo para participar en la actividad?
+    - ¿Cómo me registro para la actividad?
+    - Quisiera participar en la actividad, ¿cómo lo hago?
+    - ¿Cómo puedo apuntarme a la actividad?
+    - Me gustaría inscribirme en la actividad.
+    - ¿Dónde me apunto para la actividad?
+    - ¿Cómo puedo unirme a la actividad?
+    - Quiero inscribirme en la actividad.
+    - ¿Cómo me inscribo en la actividad?
+    - ¿Puedo registrarme para la actividad?
+    - ¿Dónde puedo registrarme para la actividad?
+    - Me interesa participar en la actividad, ¿qué hago?
+    - ¿Qué necesito para inscribirme en la actividad?
+    - ¿Cómo puedo ser parte de la actividad?
+    - Quiero participar en la actividad, ¿cómo me apunto?
+    - ¿Hay algún proceso para inscribirse en la actividad?
+    - ¿Puedo anotarme para la actividad?
+    - Me gustaría anotarme en la actividad.
+    - ¿Cómo me puedo unir a la actividad?
+    - ¿Cuál es el procedimiento para participar en la actividad?
+    - ¿Qué necesito hacer para unirme a la actividad?
+    - Estoy interesado en participar en la actividad.
+    - ¿Qué tengo que hacer para unirme a la actividad?
+    - ¿Cómo puedo ser parte de la próxima actividad?
+    - Quiero participar, ¿cómo me inscribo?
+    - ¿Me podrían decir cómo unirme a la actividad?
+    - ¿Hay algún formulario para inscribirse en la actividad?
+    - ¿Cómo puedo registrarme para participar en la actividad?
+    - Quiero apuntarme a la actividad, ¿cómo lo hago?
+    - ¿Cómo puedo inscribirme en la próxima actividad?
+    - ¿Me pueden inscribir en la actividad?
+    - ¿Qué se necesita para participar en la actividad?
+    - Quiero unirme, ¿cómo puedo participar?
+    - ¿Dónde puedo inscribirme para la actividad?
+    - ¿Cuál es el proceso para unirse a la actividad?
+    - ¿Puedo apuntarme a la actividad?
+    - Me gustaría formar parte de la actividad.
+    - ¿Qué requisitos hay para participar en la actividad?
+    - ¿Me pueden informar sobre cómo participar en la actividad?
+    - Quiero ser parte de la actividad, ¿cómo me registro?
+    - ¿Qué debo hacer para unirme a la actividad?
+    - ¿Cómo se hace para inscribirse en la actividad?
+    - Estoy interesado, ¿cómo puedo inscribirme?
+    - ¿Me pueden decir cómo registrarme para la actividad?
+    - ¿Puedo unirme a la actividad?
+    - ¿Me gustaría participar, cómo lo hago?
+    - ¿Dónde me registro para participar en la actividad?
+    - Quiero inscribirme, ¿cómo hago?
+    - ¿Hay alguna manera de inscribirse en la actividad?
+    - ¿Qué proceso debo seguir para participar en la actividad?
+    - Me interesa participar, ¿cómo me inscribo?
+    - quiero unirme
+    - quiero participar
+    - dejame unirme
+    - unirme a la actividad
+- intent: respuesta_afirmativa
+  examples: |
+    - si
+    - sí
+    - sí, me gustaría
+    - claro que sí
+    - por supuesto
+    - definitivamente
+    - sin duda
+    - claro
+    - seguro
+    - afirmativo
+    - así es
+    - desde luego
+    - ciertamente
+    - correcto
+    - de acuerdo
+    - vale
+    - sí, estoy de acuerdo
+    - sí, por favor
+    - sí, claro
+    - sí, seguro
+    - sí, perfecto
+    - sí, exacto
+    - sí, totalmente
+    - sí, eso es
+    - sí, justo así
+    - sí, quiero
+    - sí, vamos
+    - sí, hagámoslo
+    - sí, claro que quiero
+    - sí, así es
+    - sí, claro que estoy de acuerdo
+    - claro que sí, por supuesto
+    - sí, sin duda alguna
+    - sí, por supuesto
+    - sí, estoy seguro
+    - claro que sí, sin dudarlo
+    - sí, de inmediato
+    - sí, absolutamente
+    - sí, con gusto
+    - sí, cómo no
+    - sí, con certeza
+    - sí, desde luego que sí
+    - sí, claro que estoy dispuesto
+    - sí, sin pensarlo
+    - sí, cuenta conmigo
+    - sí, definitivamente quiero
+    - sí, seguro que sí
+    - sí, claro que estoy interesado
+    - sí, adelante
+    - sí, por supuesto que sí
+    - sí, con seguridad
+    - sí, claro que lo haré
+    - sí, eso quiero
+    - sí, sin ninguna duda
+    - sí, encantado
+    - sí, indudablemente
+    - sí, acepto
+    - sí, completamente
+    - sí, así lo haré
+    - sí, exacto eso es
+    - sí, claro que aceptaré
+    - sí, estoy convencido
+    - sí, seguro que quiero
+- intent: proporcionar_nombre
+  examples: |
+    - Mi nombre es [Juan](nombre)
+    - Soy [María](nombre)
+    - Me llamo [Pedro](nombre)
+    - Mi nombre es [Ana](nombre)
+    - Soy [Luis](nombre)
+    - Me llamo [Carmen](nombre)
+    - Mi nombre es [Carlos](nombre)
+    - Soy [Elena](nombre)
+    - Me llamo [Miguel](nombre)
+    - Mi nombre es [Sofía](nombre)
+    - Soy [José](nombre)
+    - Me llamo [Lucía](nombre)
+    - Mi nombre es [Fernando](nombre)
+    - Soy [Laura](nombre)
+    - Me llamo [Raúl](nombre)
+    - Mi nombre es [Marta](nombre)
+    - Soy [Antonio](nombre)
+    - Me llamo [Isabel](nombre)
+    - Mi nombre es [David](nombre)
+    - Soy [Sara](nombre)
+    - Me llamo [Jorge](nombre)
+    - Mi nombre es [Paula](nombre)
+    - Soy [Andrés](nombre)
+    - Me llamo [Clara](nombre)
+    - Mi nombre es [Alberto](nombre)
+    - Soy [Julia](nombre)
+    - Me llamo [Pablo](nombre)
+    - Mi nombre es [Beatriz](nombre)
+    - Soy [Enrique](nombre)
+    - Me llamo [Teresa](nombre)
+    - [Alan](nombre)

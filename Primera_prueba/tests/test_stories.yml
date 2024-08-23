@@ -1,0 +1,24 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: solicitud de participacion positiva
+  steps:
+    - user: |
+        hello
+      intent: saludar
+    - action: utter_saludar
+    - user: |
+        Quiero participar
+      intent: participar_actividad
+    - action: utter_participar_actividad
+    - user: |
+        claro que si
+      intent: respuesta_afirmativa
+    - action: utter_ask_nombre
+    - user: |
+        mi nombre es [Alan]{"entity":"nombre"}
+      intent: proporcionar_nombre
+    - action: datos_usuario
+    - active_loop: datos_usuario
+    - action: utter_submit

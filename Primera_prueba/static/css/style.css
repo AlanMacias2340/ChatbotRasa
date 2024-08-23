@@ -1,0 +1,306 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*Header*/
+.menu{
+    color: white;
+}
+.menu:hover{
+    color: #6c757d;
+}
+.background-container {
+    position: relative;
+    height: 100vh;
+    background-image: url('https://despegaboliviahub.com/wp-content/uploads/2022/05/Copia-de-Despega-Bolivia-Hub-video-2.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.background-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+/*Quienes somos*/
+.about-section {
+    padding: 60px 0;
+}
+.about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.about-text {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+.boton_mas {
+    border: 2px solid #343a40;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 15px;
+}
+.boton_mas:hover {
+    background-color: #040E68;
+    color: white;
+}
+.image-card {
+    margin-bottom: 20px;
+}
+
+
+/*Nuestro impacto*/
+.content_impacto {
+    padding: 60px 60px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+.impact-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.impact-item {
+    margin-bottom: 20px;
+}
+.impact-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.impact-number {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #001B69;
+}
+.impact-label {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+
+
+/*Nuestras especialidades*/
+
+.specialties-section {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+.specialties-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    color: black;
+}
+.specialty-card {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.specialty-card::after{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 15px;
+}
+.img_especial{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+}
+.specialty-card:hover img {
+    transform: scale(1.1);
+}
+.titulo_especial{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.tarjeta_especial{
+    position: relative;
+    height: 300px;
+}
+
+
+
+/*Despega tu emprendimiento*/
+
+.background-container2 {
+    padding: 40px 50px 40px 50px;
+    position: relative;
+    height: 100vh;
+    background-image: url('https://despegaboliviahub.com/wp-content/uploads/2022/05/8c676c8a-dcf3-4198-bb02-adb052fb9a3b.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.background-container2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.hero-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.boton_despega {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.boton_despega:hover {
+    background-color: #040E68;
+    color: #ffffff;
+}
+
+
+/*nuestros proyectos*/
+.projects-section {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+.projects-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.project-logo {
+    margin-bottom: 30px;
+    height: 300px;
+    padding: 50px;
+}
+.project-logo img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+/*-medios*/
+.media-section {
+    padding: 60px 150px 60px 150px;
+    background-color: #F8F8F8;
+
+}
+.media-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.media-card {
+    margin-bottom: 20px;
+}
+.media-card .img-media{
+    position: relative;
+    height: 300px;
+    text-align: center;
+}
+.media-card .img-media img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.card-body{
+    height: 350px;
+}
+.btn_novedades {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border: 2px solid #001B69;
+    color: #001B69;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 15px;
+}
+.btn_novedades:hover {
+    background-color: #001B69;
+    color: #ffffff;
+}
+
+
+/*footer*/
+.footer {
+    background-color: #101218;
+    color: #ffffff;
+    padding: 40px 0;
+}
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #d1d1d1;
+}
+.footer .social-icons a {
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+.footer .social-icons a:hover {
+    color: #d1d1d1;
+}
+.footer .logo img {
+    max-width: 150px;
+}
+
+
+
+/*chatbot*/
+.btn-close{
+    color: white;
+}

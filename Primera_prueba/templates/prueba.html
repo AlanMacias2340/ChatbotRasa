@@ -1,0 +1,22 @@
+<div id="chat-container" style="height: 300px; overflow-y: auto; border: 1px solid #ccc;">
+    <!-- Mensajes del chat aquí -->
+</div>
+<script>
+    function addMessageToChat(message) {
+    // Crear el elemento del mensaje
+    var messageElement = document.createElement("div");
+    messageElement.textContent = message;
+
+    // Añadir el mensaje al contenedor del chat
+    var chatContainer = document.getElementById("chat-container");
+    chatContainer.appendChild(messageElement);
+
+    // Desplazar automáticamente hacia abajo
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+}
+
+// Ejemplo de uso: Añadir un mensaje cada 3 segundos
+setInterval(function() {
+    addMessageToChat("Nuevo mensaje en el chat!");
+}, 3000);
+</script>

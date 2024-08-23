@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Despega Bolivia Hub</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+     <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <!--Chatbot-->
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"
+  ></script>
+    <style>
+        .chat-sign-button {
+          width: 50px;
+          height: 50px;
+          font-size: 24px;
+        }
+      </style>
+</head>
+<body>
+    <!--header-->
+    <nav class="navbar navbar-expand-lg" style="padding: 30px 20px 30px 20px; background-color: #101218;">
+        <div class="logo">
+            <a class="navbar-brand" href="#"><img src="https://despegaboliviahub.com/wp-content/uploads/2022/06/logo-horizontal-blanco-despega.png" alt="logo_despega" style="height: 40px;"></a>
+        </div>
+
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="collapse navbar-collapse" id="navbarNav" style="display: flex; justify-content: end;">
+            <ul class="navbar-nav ml-auto" style="display: flex; gap: 40px;">
+                <li class="nav-item active">
+                    <a class="nav-link menu" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu" href="#">Impacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu" href="#">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu" href="#">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu" href="#">Contáctanos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="background-container">
+        <div class="content">
+            <h1 class="display-4">Despega Bolivia Hub</h1>
+            <p class="lead">Despega hacia el éxito con la fuerza de tus ideas y la pasión de tu espíritu emprendedor.</p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--Quienes somos-->
+    <div class="container about-section">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-md-6 image-card" style="position: relative; height: 180px;">
+                        <img src="https://despegaboliviahub.com/wp-content/uploads/2022/06/IMsssG_1596.jpeg" style="object-fit: cover; width: 100%; height: 100%; border-radius: 15px;"  alt="Despega Bolivia Hub 1">
+                    </div>
+                    <div class="col-md-6 image-card" style="position: relative; height: 180px;">
+                        <img src="https://despegaboliviahub.com/wp-content/uploads/2022/05/IMG_2034hhh.jpeg" style="object-fit: cover; width: 100%; height: 100%; border-radius: 15px" alt="Despega Bolivia Hub 2">
+                    </div>
+                    <div class="col-md-12 image-card" style="position: relative; height: 300px;">
+                        <img src="https://despegaboliviahub.com/wp-content/uploads/2024/06/dbh2.jpg" style="object-fit: cover; width: 100%; height: 100%; border-radius: 15px" alt="Despega Bolivia Hub 3">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 d-flex flex-column justify-content-center">
+                <h2 class="about-title">¿Quiénes Somos?</h2>
+                <p class="about-text">
+                    Despega Bolivia Hub es una organización que fomenta el emprendimiento en base a la innovación.
+                    Asimismo, contamos con diversos programas que te permita brindarte oportunidades de crecimiento,
+                    desarrollo personal y ayudarte a desarrollar un emprendimiento exitoso.
+                </p>
+                <a href="#" class="boton_mas btn btn-custom mt-3">Saber Más</a>
+            </div>
+        </div>
+    </div>
+
+    <!--nuestro impacto-->
+    <div class=" content_impacto" style="width: 100%; position: relative;">
+        <h2 class="impact-title">Nuestro Impacto</h2>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 impact-item">
+                <div class="impact-icon" style="height: 200px;">
+                    <img src="https://despegaboliviahub.com/wp-content/uploads/2024/06/beneficiarios-1.png" alt="Beneficiarios" style="object-fit: contain; height: 100%; width: 100%;">
+                </div>
+                <div class="impact-number">4,250</div>
+                <div class="impact-label">Beneficiarios</div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 impact-item">
+                <div class="impact-icon" style="height: 200px;">
+                    <img src="https://despegaboliviahub.com/wp-content/uploads/2024/06/proyectos2.png" alt="Proyectos" style="object-fit: contain; height: 100%; width: 100%;">
+                </div>
+                <div class="impact-number">10</div>
+                <div class="impact-label">Proyectos</div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 impact-item">
+                <div class="impact-icon" style="height: 200px;">
+                    <img src="https://despegaboliviahub.com/wp-content/uploads/2024/06/eventos.png" alt="Eventos" style="object-fit: contain; height: 100%; width: 100%;">
+                </div>
+                <div class="impact-number">380</div>
+                <div class="impact-label">Eventos</div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 impact-item">
+                <div class="impact-icon" style="height: 200px;">
+                    <img src="https://despegaboliviahub.com/wp-content/uploads/2024/06/premios.png" alt="Premios" style="object-fit: contain; height: 100%; width: 100%;">
+                </div>
+                <div class="impact-number">75</div>
+                <div class="impact-label">Premios</div>
+            </div>
+        </div>
+    </div>
+
+    <!--nuestras especialidades-->
+    <div style="color: white;">
+        <div class="container specialties-section">
+            <h2 class="specialties-title">Nuestras Especialidades</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="specialty-card tarjeta_especial">
+                        <img src="https://despegaboliviahub.com/wp-content/uploads/2022/09/PHOTO-2022-09-27-17-16-32.jpg" class="img_especial" alt="Desarrollo de Habilidades Blandas">
+                        <h3 class="titulo_especial">Desarrollo de Habilidades Blandas</h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="specialty-card tarjeta_especial">
+                        <img src="https://despegaboliviahub.com/wp-content/uploads/2022/05/gjghj.jpeg" class="img_especial" alt="Competencias Emprendedoras">
+                        <div class="titulo_especial">Competencias Emprendedoras</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="specialty-card tarjeta_especial">
+                        <img src="https://despegaboliviahub.com/wp-content/uploads/2022/06/IMsssG_1596.jpeg"class="img_especial" alt="Desarrollo de Modelo de Negocio">
+                        <div class="titulo_especial">Desarrollo de Modelo de Negocio</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="specialty-card tarjeta_especial">
+                        <img src="https://despegaboliviahub.com/wp-content/uploads/2022/05/IMG_0245.jpeg"class="img_especial" alt="Formación en Emprendimiento">
+                        <div class="titulo_especial">Formación en Emprendimiento</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="specialty-card tarjeta_especial">
+                        <img src="https://despegaboliviahub.com/wp-content/uploads/2024/05/pexels-emirhan-albayrak-859465-20291643-scaled.jpg"class="img_especial" alt="Desarrollo de Idea Innovadora con Tecnología">
+                        <div class="titulo_especial">Desarrollo de Idea Innovadora con Tecnología</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="specialty-card tarjeta_especial">
+                        <img src="https://despegaboliviahub.com/wp-content/uploads/2022/09/IMG_1956.jpeg"class="img_especial" alt="Conexión con el Ecosistema Emprendedor">
+                        <div class="titulo_especial">Conexión con el Ecosistema Emprendedor</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+        <!--Despega tu emprendimiento-->
+    <div class="contenedor_despega">
+        <div class="background-container2">
+            <div class="content">
+                <h1 class="hero-title">Despega tu Emprendimiento</h1>
+                <p class="hero-text">
+                    El objetivo general del programa es Impulsar el desarrollo de emprendimientos innovadores de alto impacto
+                    que respondan a las necesidades del mercado enfocándose a los objetivos de Desarrollo Sostenible.
+                </p>
+                <a href="#" class="boton_despega btn col-lg-4">Más Información</a>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!--Nuestros proyectos-->
+    <div class="container projects-section">
+        <h2 class="projects-title">Nuestros Proyectos</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 project-logo">
+                <img src="https://despegaboliviahub.com/wp-content/uploads/2024/05/pixelcut-export.png" alt="Despega Viajes Académicos">
+            </div>
+            <div class="col-lg-4 col-md-6 project-logo">
+                <img src="https://despegaboliviahub.com/wp-content/uploads/2024/05/pixelcut-export-1.png" alt="Women in Business Bolivia">
+            </div>
+            <div class="col-lg-4 col-md-6 project-logo">
+                <img src="https://despegaboliviahub.com/wp-content/uploads/2024/05/Ruje.png" alt="Red Universitaria de Jóvenes Emprendedores">
+            </div>
+            <div class="col-lg-4 col-md-6 project-logo">
+                <img src="https://despegaboliviahub.com/wp-content/uploads/2024/05/GIS.png" alt="Girls in Startups">
+            </div>
+            <div class="col-lg-4 col-md-6 project-logo">
+                <img src="https://despegaboliviahub.com/wp-content/uploads/2024/05/RIJE.png" alt="Red Internacional de Jóvenes Emprendedores">
+            </div>
+            <div class="col-lg-4 col-md-6 project-logo">
+                <img src="https://despegaboliviahub.com/wp-content/uploads/2024/05/webolivia-e1717698051343.png" alt="WEBOLIVIA">
+            </div>
+        </div>
+    </div>
+
+    <!--Novedades-->
+    <div class="media-section">
+        <h2 class="media-title">En los Medios</h2>
+        <div class="row">
+            <div class="col-lg-6 media-card">
+                <div class="card">
+                    <div class="img-media">
+                        <img src="https://despegaboliviahub.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-30-at-5.45.47-PM.jpeg"  alt="Noticia 1">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">LA TASA DE DESEMPLEO PARA UN JOVEN ES EL DOBLE QUE LA DE UNA PERSONA MAYOR</h5>
+                        <p class="card-text">En el mundo existen 71.1 millones de jóvenes desempleados, según datos de la OIT, y los jóvenes menores a 30 años somos más del 50% de la población a nivel mundial.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 media-card">
+                <div class="card">
+                    <div class="img-media">
+                        <img src="https://despegaboliviahub.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-30-at-5.45.47-PM-1.jpeg"  alt="Noticia 2">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Despega Bolivia Hub Coloca En 1er Lugar A La Ciudad La Paz En La Competencia Mundial De Ideas</h5>
+                        <p class="card-text">La ciudad de La Paz ganó el título de la ciudad más creativa del mundo en la 5ta Competencia Mundial de Ideas organizado por Actitud Creativa de España donde Despega Bolivia Hub aceptó el reto de organizar la competencia en La Paz.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 media-card">
+                <div class="card">
+                    <div class="img-media">
+                        <img src="https://despegaboliviahub.com/wp-content/uploads/2022/05/Copia-de-Despega-Bolivia-Hub-video-2-2.jpeg" class="card-img-top" alt="Noticia 3">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Programa "Despega Tu Emprendimiento" Impulsa El Surgimiento De Ideas Innovadoras</h5>
+                        <p class="card-text">Despega tu Emprendimiento el primer programa en educación en emprendimiento con base a un protocolo creado por Despega Bolivia Hub una institución que impulsa emprendimientos innovadores con alto impacto en la sociedad.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 media-card">
+                <div class="card">
+                    <div class="img-media">
+                        <img src="https://despegaboliviahub.com/wp-content/uploads/2022/06/Sin-titulo-5.jpg" class="card-img-top" alt="Noticia 4">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Lanzamiento De La Campaña Hecho Por Ellas Para Impulsar El Consumo De Productos Y Servicios Liderados Por Mujeres Emprendedoras Para Mitigar Los Efectos Del COVID-19</h5>
+                        <p class="card-text">La Comunidad Women Entrepreneurs for Bolivia (WEBOLIVIA) creó esta campaña con el objetivo de organizar y potenciar la visibilidad de productos y servicios liderados por mujeres bolivianas y aperturar oportunidades de crecimiento.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <a href="#" class="btn btn-custom col-lg-4 btn_novedades">Ver Más Novedades</a>
+        </div>
+
+    </div>
+
+    <!--logica chatbot-->
+    <button
+      id="chat-widget-button"
+      type="button"
+      class="btn btn-primary rounded-circle position-fixed chat-sign-button"
+      style="bottom: 20px; right: 20px; z-index: 2; background-color: transparent; border:none; display: flex; justify-content: center;align-items: center;"
+    >
+    <img src="../static/img/chat-bot.png" alt="" style="height: 50px; width: 50px;">
+</button>
+
+    <div
+      id="chat-widget"
+      class="card position-fixed shadow d-none"
+      style="bottom: 100px; right: 20px; width: 300px; z-index: 2; overflow: hidden;"
+    >
+      <div class="card-header  text-white" style="background-color: #191D85;">
+        Chatbot-Despega
+        <button
+          id="chat-widget-close-button"
+          type="button"
+          class="btn-close float-end"
+          aria-label="close"
+          style="color:white"
+        ></button>
+      </div>
+      <div class="card-chatbot" id="chat-widget-messages" style="overflow: hidden; max-height: 300px; overflow-y: auto;">
+        <!-- mensajes Chat -->
+      </div>
+      <div class="card-footer">
+        <input
+          type="text"
+          class="form-control"
+          id="chat-widget-input"
+          placeholder="Type your message..."
+        />
+      </div>
+    </div>
+
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center text-md-left">
+                    <div class="logo">
+                        <img src="https://despegaboliviahub.com/wp-content/uploads/2022/05/cropped-despega-bolivia-hub-logo.png" alt="Despega Bolivia Hub Logo">
+                    </div>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5>Menú</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Proyectos</a></li>
+                        <li><a href="#">Impacto</a></li>
+                        <li><a href="#">Eventos</a></li>
+                        <li><a href="#">Contactos</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center text-md-right">
+                    <h5>Contacto</h5>
+                    <p>Av. Aniceto Arce – Plaza Isabel la Católica</p>
+                    <p>+591 75805694</p>
+                    <p><a href="mailto:contacto@despegaboliviahub.com">contacto@despegaboliviahub.com</a></p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <p>Copyright © 2024 Despega Bolivia Hub</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!--chatbot javascript jquery-->
+    <script src="../static/js/script.js">
+        
+    </script>
+
+</body>
+</html>
